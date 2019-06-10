@@ -304,7 +304,7 @@ class RGB_Colourspace(object):
         """
 
         if value is not None:
-            value = np.reshape(value, (3, 2))
+            value = np.reshape(value, (6, 2))
         self._primaries = value
 
         self._derive_transformation_matrices()
